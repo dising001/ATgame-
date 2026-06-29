@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pesca Dorada - H5 Lobby Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="phone-stage" aria-label="横屏捕鱼游戏大厅演示">
+      <section class="lobby-shell">
+        <div class="sky">
+          <span class="cloud cloud-a"></span>
+          <span class="cloud cloud-b"></span>
+          <span class="cloud cloud-c"></span>
+          <span class="sun"></span>
+        </div>
+
+        <div class="city">
+          <span class="house h1"></span>
+          <span class="house h2"></span>
+          <span class="house h3"></span>
+          <span class="tower"></span>
+          <span class="palm"></span>
+        </div>
+
+        <div class="sea">
+          <span class="wave w1"></span>
+          <span class="wave w2"></span>
+          <span class="fish f1"></span>
+          <span class="fish f2"></span>
+          <span class="fish f3"></span>
+        </div>
+
+        <header class="top-bar">
+          <div class="profile-chip">
+            <div class="avatar">$</div>
+            <div class="profile-meta">
+              <div class="player-name">sin di</div>
+              <div class="vip-meter"><span></span></div>
+            </div>
+          </div>
+
+          <div class="wallet-row" aria-label="玩家货币">
+            <button class="wallet coin" type="button">
+              <span></span>
+              <strong>7.26M</strong>
+              <b>+</b>
+            </button>
+            <button class="wallet gem" type="button">
+              <span></span>
+              <strong>58</strong>
+              <b>+</b>
+            </button>
+          </div>
+
+          <div class="top-actions">
+            <button class="round gold" type="button" aria-label="免费金币">
+              <span>$</span>
+              <small>Oro Gratis</small>
+            </button>
+            <button class="round menu" type="button" aria-label="菜单">
+              <i></i><i></i><i></i>
+            </button>
+          </div>
+        </header>
+
+        <aside class="left-rail">
+          <button class="timer-badge" type="button">
+            <span></span>
+            <strong>02:55:04</strong>
+          </button>
+          <button class="promo-badge" type="button">
+            <b>Oferta</b>
+            <strong>Premium</strong>
+          </button>
+        </aside>
+
+        <section class="hero-character" aria-label="大厅角色">
+          <div class="sombrero"></div>
+          <div class="face">
+            <span class="eye eye-l"></span>
+            <span class="eye eye-r"></span>
+            <span class="mouth"></span>
+          </div>
+          <div class="body"></div>
+          <div class="rod">
+            <i></i>
+            <b></b>
+          </div>
+          <div class="shadow"></div>
+        </section>
+
+        <section class="game-cards" aria-label="游戏入口">
+          <article class="game-card featured" data-room="gold">
+            <div class="card-art">
+              <span class="hook"></span>
+              <span class="gold-fish"></span>
+              <span class="coin-pile"></span>
+            </div>
+            <small>Nuevo</small>
+            <h1>Pesca Dorada</h1>
+            <button class="play-now" type="button">Jugar Ahora</button>
+          </article>
+
+          <article class="game-card premium locked" data-room="deep">
+            <div class="lock-toast">Subir al nivel 30 para desbloquear esta sala.</div>
+            <div class="card-art">
+              <span class="ray"></span>
+              <span class="chest"></span>
+            </div>
+            <small>Alto premio</small>
+            <h2>Oceano Elite</h2>
+            <button class="rank-btn" type="button">Nivel 30</button>
+          </article>
+
+          <div class="side-modes">
+            <button class="mini-mode dice active" type="button" data-mode="Torneo">
+              <span></span>
+              <strong>Mini Juego</strong>
+            </button>
+            <button class="mini-mode table" type="button" data-mode="Sala Privada">
+              <span></span>
+              <strong>Mesa</strong>
+            </button>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="底部导航">
+          <button class="nav-item news active" type="button" data-panel="Noticias">
+            <span></span>
+            <strong>Noticias</strong>
+          </button>
+          <button class="nav-item gift" type="button" data-panel="Oferta">
+            <span></span>
+            <strong>Oferta</strong>
+          </button>
+          <button class="nav-item vip" type="button" data-panel="Club VIP">
+            <span></span>
+            <strong>Club VIP</strong>
+          </button>
+          <button class="nav-item more" type="button" data-panel="Mas">
+            <span></span>
+            <strong>Mas</strong>
+          </button>
+          <button class="nav-item shop" type="button" data-panel="Tienda">
+            <span></span>
+            <strong>Tienda</strong>
+          </button>
+        </nav>
+
+        <div class="status-toast" role="status" aria-live="polite">Noticias</div>
+
+        <dialog class="room-dialog" aria-label="房间演示弹窗">
+          <div class="dialog-panel">
+            <button class="close-dialog" type="button" aria-label="关闭">x</button>
+            <h2>Pesca Dorada</h2>
+            <p>选择炮台倍率后进入捕鱼场景演示。</p>
+            <div class="bet-grid">
+              <button type="button"><span>Basico</span><strong>100</strong></button>
+              <button type="button"><span>Rapido</span><strong>500</strong></button>
+              <button type="button"><span>Boss</span><strong>2K</strong></button>
+            </div>
+            <button class="enter-room" type="button">Entrar</button>
+          </div>
+        </dialog>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
