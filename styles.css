@@ -934,8 +934,9 @@ button {
   bottom: 2%;
   height: 15%;
   display: grid;
-  grid-template-columns: 17% 13% 13% 13% 13%;
-  justify-content: space-between;
+  grid-template-columns: 17% repeat(4, 12%);
+  justify-content: start;
+  column-gap: 3.2%;
   align-items: end;
   z-index: 6;
 }
